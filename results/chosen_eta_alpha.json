@@ -1,0 +1,26 @@
+{
+  "iris": {
+    "eta": 0.3,
+    "alpha": 0.0
+  },
+  "breast_cancer": {
+    "eta": 0.01,
+    "alpha": 0.9
+  },
+  "optdigits": {
+    "eta": 0.3,
+    "alpha": 0.5
+  },
+  "auto_mpg": {
+    "eta": 0.05,
+    "alpha": 0.9
+  },
+  "diabetes": {
+    "eta": 0.01,
+    "alpha": 0.9
+  },
+  "concrete": {
+    "eta": 0.3,
+    "alpha": 0.9
+  }
+}

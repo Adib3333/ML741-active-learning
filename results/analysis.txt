@@ -1,0 +1,97 @@
+================================================================================================
+TABLE: generalisation performance, mean +/- standard deviation over 30 independent runs
+================================================================================================
+
+Iris  (classification, J=20)
+  strategy              train mse           gen mse           rho    subset %   presentations
+  Passive         0.00878+-0.00247   0.01284+-0.00542    1.78+-1.33     100.0          27,000
+  SASLA           0.00854+-0.00243   0.01286+-0.00576    1.85+-1.44      81.9          22,122
+  Uncertainty     0.01202+-0.00600   0.01490+-0.00682    1.64+-1.34      42.4          11,441
+  secondary measure, macro F1: Passive 0.9619+-0.0304  SASLA 0.9619+-0.0352  Uncertainty 0.9597+-0.0324
+  paired Wilcoxon signed-rank, Holm corrected, on generalisation error rate
+    Passive vs Uncertainty       p=0.7551  p_holm=1  not significant  better=Passive      A12=0.482
+    SASLA vs Uncertainty         p=0.7763  p_holm=1  not significant  better=SASLA        A12=0.466
+    Passive vs SASLA             p=1  p_holm=1  not significant  better=tie          A12=0.519
+  pattern presentations relative to the control: SASLA 81.9%  Uncertainty 42.4%
+
+Breast Cancer  (classification, J=40)
+  strategy              train mse           gen mse           rho    subset %   presentations
+  Passive         0.01434+-0.00198   0.01808+-0.00449    1.31+-0.47     100.0          85,250
+  SASLA           0.01399+-0.00236   0.01915+-0.00477    1.44+-0.55      61.1          52,121
+  Uncertainty     0.01569+-0.00314   0.01872+-0.00513    1.26+-0.48      54.2          46,215
+  secondary measure, macro F1: Passive 0.9734+-0.0142  SASLA 0.9718+-0.0129  Uncertainty 0.9712+-0.0154
+  paired Wilcoxon signed-rank, Holm corrected, on generalisation error rate
+    Passive vs Uncertainty       p=0.1957  p_holm=0.587  not significant  better=Passive      A12=0.471
+    Passive vs SASLA             p=0.4329  p_holm=0.8658  not significant  better=Passive      A12=0.471
+    SASLA vs Uncertainty         p=0.7693  p_holm=0.8658  not significant  better=SASLA        A12=0.504
+  pattern presentations relative to the control: SASLA 61.1%  Uncertainty 54.2%
+
+Optical Digits  (classification, J=100)
+  strategy              train mse           gen mse           rho    subset %   presentations
+  Passive         0.00032+-0.00003   0.00225+-0.00024    7.16+-1.07     100.0         505,800
+  SASLA           0.00036+-0.00003   0.00228+-0.00025    6.34+-0.91      76.1         384,697
+  Uncertainty     0.00034+-0.00003   0.00221+-0.00019    6.46+-0.72      83.8         423,983
+  secondary measure, macro F1: Passive 0.9847+-0.0037  SASLA 0.9847+-0.0035  Uncertainty 0.9853+-0.0028
+  paired Wilcoxon signed-rank, Holm corrected, on generalisation error rate
+    Passive vs Uncertainty       p=0.2095  p_holm=0.6285  not significant  better=Uncertainty  A12=0.539
+    SASLA vs Uncertainty         p=0.2719  p_holm=0.6285  not significant  better=Uncertainty  A12=0.531
+    Passive vs SASLA             p=0.8063  p_holm=0.8063  not significant  better=Passive      A12=0.506
+  pattern presentations relative to the control: SASLA 76.1%  Uncertainty 83.8%
+
+Fuel Consumption  (regression, J=30)
+  strategy              train mse           gen mse           rho    subset %   presentations
+  Passive         0.00333+-0.00042   0.00406+-0.00086    1.24+-0.32     100.0          71,700
+  SASLA           0.00329+-0.00043   0.00405+-0.00092    1.26+-0.34      90.3          64,731
+  Uncertainty     0.00357+-0.00049   0.00433+-0.00122    1.22+-0.34      69.9         150,351
+  secondary measure, RMSE (original units): Passive 2.8530+-0.3013  SASLA 2.8498+-0.3035  Uncertainty 2.9382+-0.3644
+  paired Wilcoxon signed-rank, Holm corrected, on generalisation mse
+    SASLA vs Uncertainty         p=0.01546  p_holm=0.04638  significant      better=SASLA        A12=0.431
+    Passive vs Uncertainty       p=0.03842  p_holm=0.07684  not significant  better=Passive      A12=0.443
+    Passive vs SASLA             p=0.9838  p_holm=0.9838  not significant  better=SASLA        A12=0.512
+  pattern presentations relative to the control: SASLA 90.3%  Uncertainty 209.7%
+
+Diabetes Progression  (regression, J=30)
+  strategy              train mse           gen mse           rho    subset %   presentations
+  Passive         0.01799+-0.00080   0.02067+-0.00268    1.15+-0.15     100.0          79,500
+  SASLA           0.01837+-0.00085   0.02108+-0.00253    1.15+-0.14      74.6          59,291
+  Uncertainty     0.01881+-0.00141   0.02153+-0.00301    1.15+-0.15      59.3         141,468
+  secondary measure, RMSE (original units): Passive 56.1586+-3.2191  SASLA 56.7297+-3.0039  Uncertainty 57.2908+-3.6917
+  paired Wilcoxon signed-rank, Holm corrected, on generalisation mse
+    Passive vs Uncertainty       p=0.01966  p_holm=0.05898  not significant  better=Passive      A12=0.410
+    Passive vs SASLA             p=0.02623  p_holm=0.05898  not significant  better=Passive      A12=0.449
+    SASLA vs Uncertainty         p=0.2449  p_holm=0.2449  not significant  better=SASLA        A12=0.452
+  pattern presentations relative to the control: SASLA 74.6%  Uncertainty 177.9%
+
+Concrete Strength  (regression, J=50)
+  strategy              train mse           gen mse           rho    subset %   presentations
+  Passive         0.00272+-0.00054   0.00386+-0.00072    1.43+-0.20     100.0         185,400
+  SASLA           0.00284+-0.00052   0.00396+-0.00062    1.41+-0.20      99.1         183,805
+  Uncertainty     0.00316+-0.00071   0.00415+-0.00076    1.33+-0.17      86.3         479,900
+  secondary measure, RMSE (original units): Passive 6.1028+-0.5601  SASLA 6.1839+-0.4869  Uncertainty 6.3315+-0.5891
+  paired Wilcoxon signed-rank, Holm corrected, on generalisation mse
+    Passive vs Uncertainty       p=0.07672  p_holm=0.2302  not significant  better=Passive      A12=0.384
+    Passive vs SASLA             p=0.1519  p_holm=0.3038  not significant  better=Passive      A12=0.424
+    SASLA vs Uncertainty         p=0.4045  p_holm=0.4045  not significant  better=SASLA        A12=0.443
+  pattern presentations relative to the control: SASLA 99.1%  Uncertainty 258.8%
+
+================================================================================================
+Friedman test across the six problems
+================================================================================================
+
+solution quality:
+  average ranks: Passive=1.417  SASLA=1.917  Uncertainty=2.667
+  chi2_F = 4.9565  p = 0.08389   Iman-Davenport F(2,10) = 3.519  p = 0.06967
+  Nemenyi critical difference = 1.3527
+    Passive      vs SASLA        rank difference = 0.500  not significant
+    Passive      vs Uncertainty  rank difference = 1.250  not significant
+    SASLA        vs Uncertainty  rank difference = 0.750  not significant
+
+computational cost:
+  average ranks: Passive=2.500  SASLA=1.333  Uncertainty=2.167
+  chi2_F = 4.3333  p = 0.1146   Iman-Davenport F(2,10) = 2.826  p = 0.1064
+  Nemenyi critical difference = 1.3527
+    Passive      vs SASLA        rank difference = 1.167  not significant
+    Passive      vs Uncertainty  rank difference = 0.333  not significant
+    SASLA        vs Uncertainty  rank difference = 0.833  not significant
+
+wrote results/analysis.json

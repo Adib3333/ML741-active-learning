@@ -1,0 +1,9 @@
+{
+  "sensitivity_max_abs_diff": 1.3019182260043394e-10,
+  "informativeness_max_abs_diff": 3.469446951953614e-18,
+  "gradient_max_abs_diff": 3.175237850427948e-11,
+  "friedman_vs_scipy_abs_diff": 7.771561172376096e-15,
+  "friedman_vs_hand_abs_diff": 0.0,
+  "holm_vs_hand_abs_diff": 0.0,
+  "a12_vs_direct_abs_diff": 1.1102230246251565e-16
+}

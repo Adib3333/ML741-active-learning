@@ -1,0 +1,8 @@
+{
+  "iris": 2,
+  "breast_cancer": 2,
+  "optdigits": 80,
+  "auto_mpg": 4,
+  "diabetes": 1,
+  "concrete": 4
+}

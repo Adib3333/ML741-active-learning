@@ -1,0 +1,158 @@
+{
+  "iris": {
+    "sasla": {
+      "best_eta": 0.1,
+      "best_alpha": 0.9,
+      "best_val": 0.015445901455784278,
+      "best_se": 0.0029168806574329307,
+      "inherited_eta": 0.3,
+      "inherited_alpha": 0.0,
+      "inherited_val": 0.015738477278335626,
+      "inherited_is_best": false,
+      "within_one_se": true,
+      "relative_excess": 0.01894197133063935
+    },
+    "uncertainty": {
+      "best_eta": 0.3,
+      "best_alpha": 0.0,
+      "best_val": 0.01638900866087898,
+      "best_se": 0.0027996915313392096,
+      "inherited_eta": 0.3,
+      "inherited_alpha": 0.0,
+      "inherited_val": 0.01638900866087898,
+      "inherited_is_best": true,
+      "within_one_se": true,
+      "relative_excess": 0.0
+    }
+  },
+  "breast_cancer": {
+    "sasla": {
+      "best_eta": 0.1,
+      "best_alpha": 0.9,
+      "best_val": 0.013093041128463184,
+      "best_se": 0.0014379911773686205,
+      "inherited_eta": 0.01,
+      "inherited_alpha": 0.9,
+      "inherited_val": 0.014749731477161968,
+      "inherited_is_best": false,
+      "within_one_se": false,
+      "relative_excess": 0.12653212744419462
+    },
+    "uncertainty": {
+      "best_eta": 0.01,
+      "best_alpha": 0.9,
+      "best_val": 0.014820383343049238,
+      "best_se": 0.00107853298747375,
+      "inherited_eta": 0.01,
+      "inherited_alpha": 0.9,
+      "inherited_val": 0.014820383343049238,
+      "inherited_is_best": true,
+      "within_one_se": true,
+      "relative_excess": 0.0
+    }
+  },
+  "optdigits": {
+    "sasla": {
+      "best_eta": 0.3,
+      "best_alpha": 0.5,
+      "best_val": 0.0023146606841696975,
+      "best_se": 1.590642129137574e-05,
+      "inherited_eta": 0.3,
+      "inherited_alpha": 0.5,
+      "inherited_val": 0.0023146606841696975,
+      "inherited_is_best": true,
+      "within_one_se": true,
+      "relative_excess": 0.0
+    },
+    "uncertainty": {
+      "best_eta": 0.1,
+      "best_alpha": 0.9,
+      "best_val": 0.0023012233938353786,
+      "best_se": 6.681733357148679e-05,
+      "inherited_eta": 0.3,
+      "inherited_alpha": 0.5,
+      "inherited_val": 0.002328148750548993,
+      "inherited_is_best": false,
+      "within_one_se": true,
+      "relative_excess": 0.011700453239673836
+    }
+  },
+  "auto_mpg": {
+    "sasla": {
+      "best_eta": 0.1,
+      "best_alpha": 0.9,
+      "best_val": 0.00381575912945874,
+      "best_se": 0.00051665736080302,
+      "inherited_eta": 0.05,
+      "inherited_alpha": 0.9,
+      "inherited_val": 0.003816456031783675,
+      "inherited_is_best": false,
+      "within_one_se": true,
+      "relative_excess": 0.00018263792375017296
+    },
+    "uncertainty": {
+      "best_eta": 0.3,
+      "best_alpha": 0.9,
+      "best_val": 0.0037246114202620973,
+      "best_se": 0.00025646461087284046,
+      "inherited_eta": 0.05,
+      "inherited_alpha": 0.9,
+      "inherited_val": 0.004294022280043772,
+      "inherited_is_best": false,
+      "within_one_se": false,
+      "relative_excess": 0.15287792350204565
+    }
+  },
+  "diabetes": {
+    "sasla": {
+      "best_eta": 0.05,
+      "best_alpha": 0.0,
+      "best_val": 0.019518123714980008,
+      "best_se": 0.000812194651740826,
+      "inherited_eta": 0.01,
+      "inherited_alpha": 0.9,
+      "inherited_val": 0.019961255601764823,
+      "inherited_is_best": false,
+      "within_one_se": true,
+      "relative_excess": 0.022703610923662465
+    },
+    "uncertainty": {
+      "best_eta": 0.05,
+      "best_alpha": 0.9,
+      "best_val": 0.01938627530128126,
+      "best_se": 0.0009047104425402129,
+      "inherited_eta": 0.01,
+      "inherited_alpha": 0.9,
+      "inherited_val": 0.019850577113029157,
+      "inherited_is_best": false,
+      "within_one_se": true,
+      "relative_excess": 0.023950026734491425
+    }
+  },
+  "concrete": {
+    "sasla": {
+      "best_eta": 0.3,
+      "best_alpha": 0.9,
+      "best_val": 0.004025087927126759,
+      "best_se": 0.00033963629986350435,
+      "inherited_eta": 0.3,
+      "inherited_alpha": 0.9,
+      "inherited_val": 0.004025087927126759,
+      "inherited_is_best": true,
+      "within_one_se": true,
+      "relative_excess": 0.0
+    },
+    "uncertainty": {
+      "best_eta": 0.3,
+      "best_alpha": 0.9,
+      "best_val": 0.0037690245674420466,
+      "best_se": 0.0003310213604015703,
+      "inherited_eta": 0.3,
+      "inherited_alpha": 0.9,
+      "inherited_val": 0.0037690245674420466,
+      "inherited_is_best": true,
+      "within_one_se": true,
+      "relative_excess": 0.0
+    }
+  }
+}

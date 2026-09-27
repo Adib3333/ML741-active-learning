@@ -1,0 +1,65 @@
+{
+  "cases": {
+    "breast_cancer|sasla": {
+      "eta": 0.1,
+      "alpha": 0.9,
+      "mean_old": 0.02608695652173911,
+      "mean_new": 0.03681159420289855,
+      "mean_passive": 0.024637681159420274,
+      "presentations_rel_new": 55.19174975562073,
+      "tests": {
+        "Passive vs SASLA": {
+          "p_holm": 0.001924963757605958,
+          "reject": true,
+          "better": "Passive"
+        },
+        "SASLA vs Uncertainty": {
+          "p_holm": 0.011140585212208455,
+          "reject": true,
+          "better": "Uncertainty"
+        },
+        "Passive vs Uncertainty": {
+          "p_holm": 0.1956677425436415,
+          "reject": false,
+          "better": "Passive"
+        }
+      }
+    },
+    "auto_mpg|uncertainty": {
+      "eta": 0.3,
+      "alpha": 0.9,
+      "mean_old": 0.004333823838060463,
+      "mean_new": 0.0039926775005836666,
+      "mean_passive": 0.004055238298710984,
+      "presentations_rel_new": 268.80167364016734,
+      "tests": {
+        "SASLA vs Uncertainty": {
+          "p_holm": 0.6856584660708904,
+          "reject": false,
+          "better": "Uncertainty"
+        },
+        "Passive vs Uncertainty": {
+          "p_holm": 0.6856584660708904,
+          "reject": false,
+          "better": "Uncertainty"
+        },
+        "Passive vs SASLA": {
+          "p_holm": 0.9838335812091827,
+          "reject": false,
+          "better": "SASLA"
+        }
+      }
+    }
+  },
+  "friedman": {
+    "avg_ranks": [
+      1.5833333333333333,
+      2.25,
+      2.1666666666666665
+    ],
+    "chi2": 1.6521739130434807,
+    "p_chi2": 0.4377589088697925,
+    "F": 0.7983193277310937,
+    "p_F": 0.476803434404018
+  }
+}
